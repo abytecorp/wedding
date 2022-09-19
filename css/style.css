@@ -62,11 +62,15 @@ p {
   margin-bottom: 20px;
 }
 
-h1, h2, h3, h4, h5, h6, figure {
+h1, h2, h3, h4, h5, figure {
   color: #000;
   font-family: "Work Sans", Arial, sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
+}
+h6, figure {
+  -webkit-text-stroke: 2px black;
+  color: #fff;
 }
 
 ::-webkit-selection {
@@ -128,7 +132,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 14px;
   padding: 30px 10px;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgb(0, 0, 0);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -272,19 +276,26 @@ h1, h2, h3, h4, h5, h6, figure {
   vertical-align: middle;
   font-size: 40px;
 }
+.names-list {
+  background: rgb(255, 255, 255);
+}
+.names-list li .value{
+  font-weight: 100;
+  color: #000;
+}
 .fh5co-video .overlay {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  /* background: rgba(0, 0, 0, 0.5); */
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 .fh5co-video:hover .overlay {
-  background: rgba(0, 0, 0, 0.7);
+  /* background: rgba(0, 0, 0, 0.7); */
 }
 .fh5co-video:hover a {
   position: relative;

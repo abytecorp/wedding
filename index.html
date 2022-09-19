@@ -44,6 +44,7 @@
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
 	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 
@@ -56,6 +57,7 @@
 
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.29.2/sweetalert2.all.js"></script>
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -74,9 +76,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-2">
-					<div id="fh5co-logo"><a href="index.html">Wedding<strong>.</strong></a></div>
+					<!-- <div id="fh5co-logo"><a href="#">Brayan y Viviana<strong>.</strong></a></div> -->
 				</div>
-				<div class="col-xs-10 text-right menu-1">
+				<!-- <div class="col-xs-10 text-right menu-1">
 					<ul>
 						<li class="active"><a href="index.html">Home</a></li>
 						<li><a href="about.html">Historia</a></li>
@@ -100,7 +102,7 @@
 						</li>
 						<li><a href="contact.html">Contactenos</a></li>
 					</ul>
-				</div>
+				</div> -->
 			</div>
 			
 		</div>
@@ -116,13 +118,49 @@
 							<h1>Bryan &amp; Viviana</h1>
 							<h2>Nos vamos a casar en:</h2>
 							<div class="simply-countdown simply-countdown-one"></div>
-							<p><a href="#" class="btn btn-default btn-sm">Guarda la fecha!</a></p>
+							<!-- <p><a href="#" class="btn btn-default btn-sm">Guarda la fecha!</a></p> -->
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</header>
+
+	<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_bg_4.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Estoy invitado a la boda?</h2>
+					<p>Por favor busca tu nombre en el listado de invitados, seleccionate y aceptas la invitación.</p>
+				</div>
+			</div>
+			<div class="row animate-box">
+				<div class="col-md-10 col-md-offset-1">
+					<form class="form-inline" autocomplete="off">
+						<div class="col-md-4 col-sm-4">
+
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<div class="dropdown">
+								<input type="text" autocomplete="off" id="input" class="form-control" placeholder="Busca tu nombre"/>
+								
+								<!-- <li class="has-dropdown">  -->
+									<ul id="suggestions" class="has-dropdown active"></ul>
+								<!-- </li> -->
+							</div>
+							
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<!-- <button type="submit" class="btn btn-default btn-block">Asistire!</button>
+							<a onclick="cleanSelection()"><i class="icon-circle-cross"></i></a> -->
+						</div>
+						<p class="names-list">Si todo sale bien, apareceras en el <a href="#fh5co-gallery"><i class="icon-users"></i> LISTADO</a> de invitados, de lo contrario, llama al novio porque la embarro en algo!.</p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<div id="fh5co-couple">
 		<div class="container">
@@ -175,15 +213,15 @@
 									<h3>Ceremonia Principal</h3>
 									<div class="event-col">
 										<i class="icon-clock"></i>
+										<span>3:00 PM -</span>
 										<span>4:00 PM</span>
-										<span>6:00 PM</span>
 									</div>
 									<div class="event-col">
 										<i class="icon-calendar"></i>
 										<span>Sabado 8</span>
 										<span>Octubre, 2022</span>
 									</div>
-									<p>En la acogedora capilla de chinauta nos podras acompañar a la ceremonia nupcial de nuestro compromiso.</p>
+									<p>En la acogedora Parroquia del Niño Jesús de Chinauta nos podras acompañar a la ceremonia nupcial de nuestro compromiso.</p>
 									<!-- Large modal -->
 									<button type="button" class="btn btn-primary" onclick="goLocationChurch()"><i class="icon-rocket"></i>Como llegar?</button>
 
@@ -194,15 +232,15 @@
 									<h3>Reunion y fiesta de la boda</h3>
 									<div class="event-col">
 										<i class="icon-clock"></i>
-										<span>7:00 PM</span>
-										<span>12:00 AM</span>
+										<span>Sabado 8 de Octubre</span>
+										<span>5:00 pm</span>
 									</div>
 									<div class="event-col">
-										<i class="icon-calendar"></i>
-										<span>Sabado 8</span>
-										<span>Octubre, 2022</span>
+										<i class="icon-arrow-up"></i>
+										<span>Domingo 9 de Octubre</span>
+										<span>En la tarde</span>
 									</div>
-									<p>Una gran reunion en la hacienda en chinauta.</p>
+									<p>En una hacienda de chinauta, en la cual tendras la posibilidad de quedarte y el domingo disfrutar con nosotros un rato de esparcimiento.</p>
 									<button type="button" class="btn btn-primary" onclick="goLocationParty()"><i class="icon-rocket"></i>Como llegar?</button>
 								</div>
 							</div>
@@ -251,7 +289,7 @@
 									<span class="date">Febrero, 2008</span>
 								</div>
 								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									<p>Un Sábado inolvidable en el C.C. de Bosa el novio se encuentra a la novia tratando de abrir una pared con una llave, y junto a Yesid (el padrino) se explota de risa, perfecta excusa para iniciar esta aventura con una chocolatina de disculpa.</p>
 								</div>
 							</div>
 						</li>
@@ -259,11 +297,11 @@
 							<div class="timeline-badge" style="background-image:url(images/couple-2.jpg);"></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">First Date</h3>
-									<span class="date">December 28, 2015</span>
+									<h3 class="timeline-title">Nuestra Primera Cita</h3>
+									<span class="date">Marzo, 2008</span>
 								</div>
 								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									<p>Después de un veloz romance, nos preparamos a salir a escondidas y esa primera salida a unilago se convirtió en un feliz y divertido recuerdo.</p>
 								</div>
 							</div>
 						</li>
@@ -271,11 +309,11 @@
 							<div class="timeline-badge" style="background-image:url(images/couple-3.jpg);"></div>
 							<div class="timeline-panel">
 								<div class="timeline-heading">
-									<h3 class="timeline-title">In A Relationship</h3>
-									<span class="date">January 1, 2016</span>
+									<h3 class="timeline-title">Vivimos en familia</h3>
+									<span class="date">January 10, 2016</span>
 								</div>
 								<div class="timeline-body">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									<p>Después de una fuerte lucha y una larga distancia, nos reunimos y tomamos la decisión de convivir, y luchar juntos para sostener un lindo hogar que es el que nos compone hoy en día..</p>
 								</div>
 							</div>
 						</li>
@@ -289,146 +327,16 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<span>Our Memories</span>
-					<h2>Wedding Gallery</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+					<span>Asistentes a</span>
+					<h2>Nuesttra Boda</h2>
+					<h6>Nuestros invitados que aceptaron asistir, apareceran en este listado.</h6>
 				</div>
 			</div>
 			<div class="row row-bottom-padded-md">
 				<div class="col-md-12">
 					<ul id="fh5co-gallery-list">
-						
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-1.jpg); "> 
-						<a href="images/gallery-1.jpg">
-							<div class="case-studies-summary">
-								<span>14 Photos</span>
-								<h2>Two Glas of Juice</h2>
-							</div>
-						</a>
-					</li>
-					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-2.jpg); ">
-						<a href="#" class="color-2">
-							<div class="case-studies-summary">
-								<span>30 Photos</span>
-								<h2>Timer starts now!</h2>
-							</div>
-						</a>
-					</li>
-
-
-					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-3.jpg); ">
-						<a href="#" class="color-3">
-							<div class="case-studies-summary">
-								<span>90 Photos</span>
-								<h2>Beautiful sunset</h2>
-							</div>
-						</a>
-					</li>
-					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-4.jpg); ">
-						<a href="#" class="color-4">
-							<div class="case-studies-summary">
-								<span>12 Photos</span>
-								<h2>Company's Conference Room</h2>
-							</div>
-						</a>
-					</li>
-
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-5.jpg); ">
-							<a href="#" class="color-3">
-								<div class="case-studies-summary">
-									<span>50 Photos</span>
-									<h2>Useful baskets</h2>
-								</div>
-							</a>
-						</li>
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-6.jpg); ">
-							<a href="#" class="color-4">
-								<div class="case-studies-summary">
-									<span>45 Photos</span>
-									<h2>Skater man in the road</h2>
-								</div>
-							</a>
-						</li>
-
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-7.jpg); ">
-							<a href="#" class="color-4">
-								<div class="case-studies-summary">
-									<span>35 Photos</span>
-									<h2>Two Glas of Juice</h2>
-								</div>
-							</a>
-						</li>
-
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-8.jpg); "> 
-							<a href="#" class="color-5">
-								<div class="case-studies-summary">
-									<span>90 Photos</span>
-									<h2>Timer starts now!</h2>
-								</div>
-							</a>
-						</li>
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/gallery-9.jpg); ">
-							<a href="#" class="color-6">
-								<div class="case-studies-summary">
-									<span>56 Photos</span>
-									<h2>Beautiful sunset</h2>
-								</div>
-							</a>
-						</li>
+	
 					</ul>		
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="fh5co-counter" class="fh5co-bg fh5co-counter" style="background-image:url(images/img_bg_5.jpg);">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="display-t">
-					<div class="display-tc">
-						<div class="col-md-3 col-sm-6 animate-box">
-							<div class="feature-center">
-								<span class="icon">
-									<i class="icon-users"></i>
-								</span>
-
-								<span class="counter js-counter" data-from="0" data-to="500" data-speed="5000" data-refresh-interval="50">1</span>
-								<span class="counter-label">Estimated Guest</span>
-
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6 animate-box">
-							<div class="feature-center">
-								<span class="icon">
-									<i class="icon-user"></i>
-								</span>
-
-								<span class="counter js-counter" data-from="0" data-to="1000" data-speed="5000" data-refresh-interval="50">1</span>
-								<span class="counter-label">We Catter</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6 animate-box">
-							<div class="feature-center">
-								<span class="icon">
-									<i class="icon-calendar"></i>
-								</span>
-								<span class="counter js-counter" data-from="0" data-to="402" data-speed="5000" data-refresh-interval="50">1</span>
-								<span class="counter-label">Events Done</span>
-							</div>
-						</div>
-						<div class="col-md-3 col-sm-6 animate-box">
-							<div class="feature-center">
-								<span class="icon">
-									<i class="icon-clock"></i>
-								</span>
-
-								<span class="counter js-counter" data-from="0" data-to="2345" data-speed="5000" data-refresh-interval="50">1</span>
-								<span class="counter-label">Hours Spent</span>
-
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -439,8 +347,9 @@
 			<div class="row">
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<span>Best Wishes</span>
-						<h2>Friends Wishes</h2>
+							<h2>Como debo asistir?</h2>
+							<p>La tematica de la reunion es tipo Western (viejo oeste) pero no te preocupes puedes vestir como un vaquero  y sin restricciones de color</p>
+
 					</div>
 				</div>
 				<div class="row">
@@ -449,35 +358,50 @@
 							<div class="owl-carousel-fullwidth">
 								<div class="item">
 									<div class="testimony-slide active text-center">
-										<figure>
-											<img src="images/couple-1.jpg" alt="user">
-										</figure>
-										<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
-										<blockquote>
-											<p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics"</p>
-										</blockquote>
+										<div class="col-md-6 animate-box">
+											<div class="fh5co-video fh5co-bg" style="background-image: url(images/elegant1.jpg); ">
+												<!-- <a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"><i class="icon-video2"></i></a> -->
+												<div class="overlay"></div>
+											</div>
+										</div>
+										<div class="col-md-6 animate-box">
+											<div class="fh5co-video fh5co-bg" style="background-image: url(images/elegantm1.jpg); ">
+												<!-- <a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"><i class="icon-video2"></i></a> -->
+												<div class="overlay"></div>
+											</div>
+										</div>
 									</div>
 								</div>
 								<div class="item">
 									<div class="testimony-slide active text-center">
-										<figure>
-											<img src="images/couple-2.jpg" alt="user">
-										</figure>
-										<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
-										<blockquote>
-											<p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, at the coast of the Semantics, a large language ocean."</p>
-										</blockquote>
+										<div class="col-md-6 animate-box">
+											<div class="fh5co-video fh5co-bg" style="background-image: url(images/formalw1.jpg); ">
+												<!-- <a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"><i class="icon-video2"></i></a> -->
+												<div class="overlay"></div>
+											</div>
+										</div>
+										<div class="col-md-6 animate-box">
+											<div class="fh5co-video fh5co-bg" style="background-image: url(images/formalm1.jpg); ">
+												<!-- <a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"><i class="icon-video2"></i></a> -->
+												<div class="overlay"></div>
+											</div>
+										</div>
 									</div>
 								</div>
 								<div class="item">
 									<div class="testimony-slide active text-center">
-										<figure>
-											<img src="images/couple-3.jpg" alt="user">
-										</figure>
-										<span>John Doe, via <a href="#" class="twitter">Twitter</a></span>
-										<blockquote>
-											<p>"Far far away, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."</p>
-										</blockquote>
+										<div class="col-md-6 animate-box">
+											<div class="fh5co-video fh5co-bg" style="background-image: url(images/informalw.jpg); ">
+												<!-- <a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"><i class="icon-video2"></i></a> -->
+												<div class="overlay"></div>
+											</div>
+										</div>
+										<div class="col-md-6 animate-box">
+											<div class="fh5co-video fh5co-bg" style="background-image: url(images/informalm.jpg); ">
+												<!-- <a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"><i class="icon-video2"></i></a> -->
+												<div class="overlay"></div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -493,8 +417,8 @@
 			
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>We Offer Services</h2>
-					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+					<h2>Lluvia de Sobres</h2>
+					<p>Te esperamos para que disfrutes con nosotros de esta fecha tan especial, porque para nosostros eres muy importante!.</p>
 				</div>
 			</div>
 
@@ -502,11 +426,11 @@
 				<div class="col-md-6">
 					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
 						<span class="icon">
-							<i class="icon-calendar"></i>
+							<i class="icon-users"></i>
 						</span>
 						<div class="feature-copy">
-							<h3>We Organized Events</h3>
-							<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
+							<h3>LLuvia de sobres</h3>
+							<p>Nos alegrea tenerte con nosotros, y queremos que nos acompañes de la forma mas facil posible, para ello decidimos que los regalos sean por medio de lluvia de sobres.</p>
 						</div>
 					</div>
 
@@ -515,8 +439,8 @@
 							<i class="icon-image"></i>
 						</span>
 						<div class="feature-copy">
-							<h3>Photoshoot</h3>
-							<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
+							<h3>Tematica</h3>
+							<p>La tematica de la reunion sera tipo Western, la vestimenta no es estricta pero lo ideal es que nos sintamos como unos vaqueros, puedes guiarte por el modulo.</p>
 						</div>
 					</div>
 
@@ -525,16 +449,16 @@
 							<i class="icon-video"></i>
 						</span>
 						<div class="feature-copy">
-							<h3>Video Editing</h3>
-							<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
+							<h3>Estadia</h3>
+							<p>Por la ubicacion de la reunion entendemos que el regreso a los hogares es complicado, por eso pensamos en reservar el sitio con alojamiento, por favor confirma en el registro si decides acompañarnos hasta el Domingo.</p>
 						</div>
 					</div>
 
 				</div>
 
 				<div class="col-md-6 animate-box">
-					<div class="fh5co-video fh5co-bg" style="background-image: url(images/img_bg_3.jpg); ">
-						<a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"><i class="icon-video2"></i></a>
+					<div class="fh5co-video fh5co-bg" style="background-image: url(images/gallery-1.jpg); ">
+						<!-- <a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"><i class="icon-video2"></i></a> -->
 						<div class="overlay"></div>
 					</div>
 				</div>
@@ -544,63 +468,26 @@
 		</div>
 	</div>
 
-
-	<div id="fh5co-started" class="fh5co-bg" style="background-image:url(images/img_bg_4.jpg);">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Are You Attending?</h2>
-					<p>Please Fill-up the form to notify you that you're attending. Thanks.</p>
-				</div>
-			</div>
-			<div class="row animate-box">
-				<div class="col-md-10 col-md-offset-1">
-					<form class="form-inline">
-						<div class="col-md-4 col-sm-4">
-							<div class="form-group">
-								<label for="name" class="sr-only">Name</label>
-								<input type="name" class="form-control" id="name" placeholder="Name">
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-4">
-							<div class="form-group">
-								<label for="email" class="sr-only">Email</label>
-								<input type="email" class="form-control" id="email" placeholder="Email">
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-4">
-							<button type="submit" class="btn btn-default btn-block">I am Attending</button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-
 	<footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
 
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
 					<p>
-						<small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small> 
-						<small class="block">Designed by <a href="http://abytecorp/" target="_blank">abytecorp</a> Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a></small>
+						<small class="block">&copy; Dudas?, llamnos.</small> 
+						<small class="block">322 312 1409</small>
 					</p>
-					<p>
-						<ul class="fh5co-social-icons">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
-						</ul>
-					</p>
+
 				</div>
+				<audio controls autoplay loop>
+					<source src="./zzxyz.mp3" type="audio/mp3">
+						Tu navegador no soporta audio HTML5.
+				</audio>
 			</div>
 
 		</div>
 	</footer>
-	</div>
+
 
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
@@ -631,6 +518,100 @@
 	<script src="js/main.js"></script>
 
 	<script>
+	(async () => {
+	let hiddenContent = document.getElementById('fh5co-couple');
+	let currentGuest = null;
+	hiddenContent.style.visibility = 'hidden';
+	fetch('http://localhost:3000/guest', {
+		method: 'GET',
+		Host: 'localhost:3000',
+		headers:{
+			'Content-Type': 'application/json',
+			"Access-Control-Allow-Headers" : "Content-Type",
+            "Access-Control-Allow-Origin": "localhost:3000",
+            "Access-Control-Allow-Methods": "OPTIONS,POST,GET"
+		}
+	}
+  ) .then(response => response.json())  // convertir a json
+    .then(json => 
+	{
+		let guests = [];
+		for (const e of json){
+			guests.push({
+				id: e.id, 
+				names: e.names,
+				image: e.image,
+				description: e.description,
+				invitationSecondaryText: e.invitationSecondaryText,
+				isConfirmed: e.isConfirmed,
+				isStay: e.isStay
+			});
+		}
+			let inputField = document.getElementById('input');
+			let ulField = document.getElementById('suggestions');
+			let guestCardContainer = document.getElementById('fh5co-gallery-list');
+			inputField.addEventListener('input', changeAutoComplete);
+			ulField.addEventListener('click', selectItem);
+			generateGuestCards(guestCardContainer, guests);
+
+			function changeAutoComplete({ target }) {
+				let data = target.value;
+				ulField.innerHTML = ``;
+				if (data.length) {
+				let autoCompleteValues = autoComplete(data, guests);
+				autoCompleteValues.forEach(value => { addItem(value); });
+				}
+			}
+
+			function autoComplete(inputValue, names) {
+				let currentNames = [];
+				for(const e of names){
+					currentNames.push(e.names);
+				}
+				let destination = currentNames;
+				return destination.filter(
+				(value) => value.toLowerCase().includes(inputValue.toLowerCase())
+				);
+			}
+
+			function addItem(value) {
+				ulField.innerHTML = ulField.innerHTML + `<li class="names-list">${value}</li>`;
+			}
+			function selectItem({ target }) {
+				if (target.tagName === 'LI') {
+				const index = guests.findIndex( e => e.names === target.textContent);
+				inputField.value = target.textContent;
+				ulField.innerHTML = ``;
+				selectUser(guests[index]);
+				}
+			}
+
+
+			function generateGuestCards(guestCardContainer, guests) {
+				for (const e of guests){
+					if(e.isConfirmed){
+						let guestCard = `
+					<li class="one-third" data-animate-effect="fadeIn" style="background-image: url(${e.image}); ">
+						<a href="#" class="color-6">
+							<div class="case-studies-summary">
+								<h2>${e.names}</h2>
+								<span>${e.invitationSecondaryText} ${e.isStay ? '<i class="icon-clock"></i>' : ''}</span></br>
+								<h2>${e.description}</h2>
+								<button class="btn btn-primary" onClick="cancelInvitation(${ e.id}, '${ e.names}')">Ya no puedo ir!</button>
+							</div>
+						</a>
+					</li>
+					`;
+				guestCardContainer.innerHTML += guestCard;
+					}
+			}
+			}
+	})    //imprimir los datos en la consola
+    .catch(err => console.log('Solicitud fallida', err)); // Capturar errores
+
+
+
+})();
 		// $(function() {
 		// 	var ch = document.getElementById("ch");
 		// 	var pr = document.getElementById("pr");
@@ -657,12 +638,193 @@
     });
 
 	function goLocationChurch(){
-		window.location = 'https://goo.gl/maps/rmKpz42J8zQmGeft7';
+		window.location = 'https://goo.gl/maps/NLc1uVKsbUhwCcPe6';
 	};
 
 	function goLocationParty(){
 		window.location = 'https://goo.gl/maps/LfVgiiJTnSQZhZmh7';
 	};
+
+	function cleanSelection(){
+		let inputField = document.getElementById('input');
+		inputField.value = '';
+	}
+
+	function cancelInvitation(id,names){
+		if(!id){
+
+		}else{
+			Swal.fire({
+				title: `Hola, ${names}, lamentamos que no puedas asistir, te enviaremos muchas fotos, porfavor cancela tu inscripcion digitando tu numero de celular.`,
+				input: 'text',
+				inputAttributes: {
+					autocapitalize: 'off'
+				},
+				showCancelButton: true,
+				confirmButtonText: 'Cancelar inscripción',
+				showLoaderOnConfirm: true,
+				preConfirm: (login) => {
+					if(!login) {
+						Swal.showValidationMessage(
+						`No encontramos tu numero de celular, podrias confirmar que este bien escrito?`
+						)
+					}else{
+						return fetch(`http://localhost:3000/guest/${id}/${login}`, {
+						method: 'PUT',
+						Host: 'localhost:3000',
+						headers:{
+							'Content-Type': 'application/json',
+							"Access-Control-Allow-Headers" : "Content-Type",
+							"Access-Control-Allow-Origin": "localhost:3000",
+							"Access-Control-Allow-Methods": "OPTIONS,POST,GET"
+						},
+						body: JSON.stringify({
+							"isConfirmed": false,
+							"isStay": false
+						})
+					}
+	 				)
+					.then(response => {
+						if (!response.ok) {
+						throw new Error('No encontramos tu numero de celular, podrias confirmar que este bien escrito?')
+						}
+						location.reload();
+					})
+					.catch(error => {
+						Swal.showValidationMessage(
+						`Request failed: ${error}`
+						)
+					})
+					}
+
+				},
+				allowOutsideClick: () => !Swal.isLoading()
+				}).then((result) => {
+				if (result.isConfirmed) {
+					Swal.fire({
+					title: `${result.value.login}'s avatar`,
+					imageUrl: result.value.avatar_url
+					})
+				}
+			})
+		}
+
+	}
+
+	function selectUser(selectedGuest) {
+		let phoneUser = '';
+		if(!selectedGuest){
+
+		}else{
+			Swal.fire({
+				title: `Hola, ${selectedGuest.names}, por favor confirma con tu numero de celular, que vas a asistir a nuestra boda`,
+				input: 'text',
+				inputAttributes: {
+					autocapitalize: 'off'
+				},
+				showCancelButton: true,
+				confirmButtonText: 'Confirmar',
+				showLoaderOnConfirm: true,
+				preConfirm: (login) => {
+					phoneUser = login;
+					if(!login) {
+						Swal.showValidationMessage(
+						`No encontramos tu numero de celular, podrias confirmar que este bien escrito?`
+						)
+					}else{
+						return fetch(`http://localhost:3000/guest/${selectedGuest.id}/${login}`, {
+						method: 'PUT',
+						Host: 'localhost:3000',
+						headers:{
+							'Content-Type': 'application/json',
+							"Access-Control-Allow-Headers" : "Content-Type",
+							"Access-Control-Allow-Origin": "localhost:3000",
+							"Access-Control-Allow-Methods": "OPTIONS,POST,GET"
+						},
+						body: JSON.stringify({
+							"isConfirmed": true
+						})
+					}
+	 				)
+					.then(response => {
+						if (!response.ok) {
+						throw new Error('No encontramos tu numero de celular, podrias confirmar que este bien escrito?')
+						}else{
+						//location.reload();
+						}
+					})
+					.catch(error => {
+						Swal.showValidationMessage(
+						`Request failed: ${error}`
+						)
+					})
+					}
+
+				}
+				,
+				allowOutsideClick: () => !Swal.isLoading()
+				}).then((result) => {
+				if (result.isConfirmed) {
+					Swal.fire({
+					title: `${result.value.login}'s avatar`,
+					imageUrl: result.value.avatar_url
+					})
+				}
+				console.log("phone:",phoneUser)
+				let pass = true;
+										Swal.fire({
+											title: `${selectedGuest.names}, solo una pregunta mas:</br> - Te quedarias hasta el domingo?, nosostros nos encargamos de los gastos de hospedaje.`,
+											inputAttributes: {
+												autocapitalize: 'off'
+											},
+											showCancelButton: true,
+											confirmButtonText: 'Si, me quedaré hasta el Domingo',
+											cancelButtonText: 'No, no me quedaré',
+											showLoaderOnConfirm: true,
+											preConfirm: (pass) => {
+												return fetch(`http://localhost:3000/guest/${selectedGuest.id}/${phoneUser}`, {
+													method: 'PUT',
+													Host: 'localhost:3000',
+													headers:{
+														'Content-Type': 'application/json',
+														"Access-Control-Allow-Headers" : "Content-Type",
+														"Access-Control-Allow-Origin": "localhost:3000",
+														"Access-Control-Allow-Methods": "OPTIONS,POST,GET,PUT"
+													},
+													body: JSON.stringify({
+														"isStay": true
+													})
+												}
+												)
+												.then(response => {
+													if (!response.ok) {
+													throw new Error(response.statusText)
+													}
+													location.reload();
+												})
+												.catch(error => {
+													Swal.showValidationMessage(
+													`Request failed: ${error}`
+													)
+												})
+											},
+											allowOutsideClick: () => !Swal.isLoading()
+											}).then((result) => {
+											if (result.isConfirmed) {
+												Swal.fire({
+												title: `${result.value.login}'s avatar`,
+												imageUrl: result.value.avatar_url
+												})
+											}
+											location.reload();
+											})
+			
+		})
+		}
+	}
+
+
+
 	
 </script>
 
